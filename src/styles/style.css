@@ -109,7 +109,7 @@ p {
 .star {
     width: 109px;
     height: 100px;
-    background: url(./pics/_Слой_1.png);
+    background: url("../pics/_Слой_1.png");
     margin: auto;
 }
 
