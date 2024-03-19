@@ -111,6 +111,8 @@ p {
     height: 100px;
     background: url("../pics/_Слой_1.png");
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .block2_title {
