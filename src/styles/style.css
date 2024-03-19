@@ -1,0 +1,122 @@
+body {
+    background-color: black;
+    font-size: 30px;
+    margin:0;
+    font-family: "Mulish", sans-serif;
+    color: white;
+}
+
+@font-face {
+    font-family: 'Bicubic';
+    src: url("./fonts/Bicubik.OTF") format("opentype");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin:0;
+}
+
+p {
+    margin: 0;
+}
+
+/*контейнер для всех элементов сайтв*/
+
+.container {
+    width: 100%;
+    max-width: 1386px;
+    margin: 0 auto;
+}
+
+/*шапка*/
+
+.header {
+    height: 130px;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Bicubic';
+    max-width: 230px;
+    font-size: 35px;
+    padding-top: 32px;
+    padding-bottom: 38px;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    padding-top: 60px;
+    padding-bottom: 45px;
+}
+
+.menu {
+    text-decoration: none;
+    color: white;
+    margin: 25px;
+}
+
+.menu1 {
+    text-decoration: none;
+    color: white;
+    vertical-align: top;
+    padding: 24px 35px;
+    border-radius: 64px;
+    background-color:  #FF2AD5;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.menu:hover {
+    color: #FF2AD5;
+    transition: 0.4s;
+}
+
+.menu1:hover {
+    background-color: #ffffff;
+    color: #FF2AD5;
+    transition: 0.4s;
+}
+
+/*первый блок*/
+
+.block1_title {
+    font-family: 'Bicubic';
+    font-size: 96px;
+    padding-top: 107px;
+    max-width: 1019px;
+    padding-bottom: 18px;
+}
+
+.block1_inscription {
+    font-size: 30px;
+    color: #FF2AD5;
+    padding-bottom: 94px;
+}
+
+.star {
+    width: 109px;
+    height: 100px;
+    background: url(./pics/_Слой_1.png);
+    margin: auto;
+}
+
+.block2_title {
+    font-family: 'Bicubic';
+    font-size: 62px;
+text-align: center;
+padding-top: 76px;
+padding-bottom: 219px;
+}
