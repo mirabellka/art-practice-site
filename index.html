@@ -10,30 +10,87 @@
 <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header_inner">
-                <div class="logo">Стар Экспресс</div>
-                <nav class="nav">
-                    <a href="#" class="menu">О нас</a>
-                    <a href="#" class="menu">Поезда и маршруты</a>
-                    <a href="#" class="menu">Контакты</a>
-                    <a href="#" class="menu1">Купить билет</a>
+
+
+    <header>
+            <nav>
+                <h1 class="bicubic">Стар Экспресс</h1>
+                <nav>
+                    <ul class="nav">
+                        <li><a href="#about" class="menu">О нас</a></li>
+                        <li><a href="#marshruty" class="menu">Поезда и маршруты</a></li>
+                        <li><a href="#contacts" class="menu">Контакты</a></li>
+                        <li><a href="#buy" class="menu1">Купить билет</a></li>
+                    </ul>
                 </nav>
-            </div>
-        </div>
+            </nav>
+            <article class="slogan">
+                <h2 class="bicubic">Начни </br> свою жизнь </br> с чистого листа</h2>
+                <span class="inscription">Отправления в новые миры</span>
+            </article>
     </header>
-    <div class="block1">
-        <div class="container">
-            <h1 class="block1_title">Начни </br> свою жизнь </br> с чистого листа</h1>
-            <h2 class="block1_inscription">Отправления в новые миры</h2>
+
+
+    <article class="span" id="about">
+            <img src="src/pics/star.png" class="star">
+            <h3 class="bicubic">
+                Звёздный экспресс</br>
+                может отправить ваc</br>
+                в любой уголок вселенной</h3>
+    </article>
+
+
+    <section class="pictures-block" id="marshruty">
+        <h3 class="bicubic pink">побывай в разных мирах</h3>
+        <div class="pictures">
+            <img src="src/pics/pic1.png" class="pic">
+            <img src="src/pics/pic2.png" class="pic">
+            <img src="src/pics/pic3.png" class="pic">
         </div>
-    </div>
-    <div class="block2">
-        <div class="container">
-            <div class="star"></div>
-            <h1 class="block2_title">Звёздный экспресс </br> может отправить ваc </br> в любой уголок вселенной</h1>
+    </section>
+
+
+    <section class="buy" id="buy">
+        <h3 class="bicubic pink">купить билет</h3>
+        <form>
+            <div class="input-line line1">
+                <input type="text" class="pink-input" placeholder="ОТКУДА">
+                <img src="src/pics/otkuda-kuda.png" class="input-img">
+                <input type="text" class="pink-input" placeholder="КУДА">
+            </div>
+            <div class="input-line line2">
+                <input type="text" class="pink-input" placeholder="ТУДА">
+                <img src="src/pics/tuda-obratno.png" class="input-img">
+                <input type="text" class="pink-input" placeholder="ОБРАТНО">
+            </div>
+            <div class="line3">
+                <a target="_blank" href="#" class="pink-button but1">НАЙТИ</a>
+            </div>
+            </form>
+    </section>
+
+
+    <article class="lets-start">
+            <h3 class="bicubic">
+                начни свою жизнь</br>
+                со звёздным экспрессом</br>
+        <img src="src/pics/star.png" class="star">
+        <a target="_blank" href="#" class="pink-button but2">УЗНАТЬ БОЛЬШЕ</a>
+    </article>
+
+    <footer id="contacts">
+        <div class="footer-block">
+            <h4>КОНТАКТЫ</h4>
+            <tel>+7 (927) 567 39 30</tel>
+            <a href="mailto:starexpress@moon.com" class="a-footer">starexpress@moon.com</a>
         </div>
-    </div>
+        <div class="footer-block">
+            <h4>НАВИГАЦИЯ</h4>
+            <a href="#about" class="a-footer">Стар экспресс</a>
+            <a href="#buy" class="a-footer">Купить билет</a>
+            <a href="#" target="_blank" class="a-footer">Связаться с нами</a>
+        </div>
+    </footer>
+
 </body>
 </html>

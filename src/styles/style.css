@@ -1,9 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+
 body {
     background-color: black;
     font-size: 30px;
-    margin:0;
+    margin: 0;
     font-family: "Mulish", sans-serif;
     color: white;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @font-face {
@@ -24,34 +32,30 @@ p {
     margin: 0;
 }
 
-/*контейнер для всех элементов сайтв*/
-
-.container {
-    width: 100%;
-    max-width: 1386px;
-    margin: 0 auto;
+.bicubic {
+    font-family: 'Bicubic';
+    line-height: 93%;
+    font-weight: 300;
 }
 
-/*шапка*/
+/* верхний блок */
 
-.header {
-    height: 130px;
-    background-color: black;
+header {
+    width: 1386px;
+    height: max-content;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
 }
 
-.logo {
-    font-family: 'Bicubic';
+h1 {
     max-width: 230px;
     font-size: 35px;
     padding-top: 32px;
     padding-bottom: 38px;
 }
 
-.header_inner {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,6 +64,11 @@ p {
 .nav {
     padding-top: 60px;
     padding-bottom: 45px;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
 }
 
 .menu {
@@ -90,35 +99,206 @@ p {
     transition: 0.4s;
 }
 
-/*первый блок*/
-
-.block1_title {
-    font-family: 'Bicubic';
+h2 {
     font-size: 96px;
     padding-top: 107px;
     max-width: 1019px;
     padding-bottom: 18px;
 }
 
-.block1_inscription {
+.inscription {
     font-size: 30px;
     color: #FF2AD5;
-    padding-bottom: 94px;
+    padding-bottom: 64px;
+}
+
+/* 2 блок */
+
+.span {
+    margin-top: 94px;
+    margin-bottom: 219px;
+    display: flex;
+    flex-direction: column;
 }
 
 .star {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
     width: 109px;
     height: 100px;
-    background: url("../pics/layer1.png");
-    margin: auto;
-    display: flex;
-    justify-content: center;
 }
 
-.block2_title {
-    font-family: 'Bicubic';
+h3 {
     font-size: 62px;
-text-align: center;
-padding-top: 76px;
-padding-bottom: 219px;
+    text-align: center;
+    margin-top: 76px;
+}
+
+/* 3 блок */
+
+.pictures-block {
+    width: 1352px;
+    margin-bottom: 154px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pink {
+    color: #FF2AD5;
+}
+
+.pictures {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 74px;
+}
+
+.pics {
+    width: 413px;
+    height: 355px;
+}
+
+/* 4 блок */
+
+.buy {
+    width: 1218px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 169px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line1 {
+    margin-top: 80px;
+}
+
+.line2 {
+    margin-top: 39px;
+    margin-bottom: 92px;
+}
+
+.line3 {
+    margin-left: 461px;
+    margin-right: 461px;
+}
+
+.pink-input {
+    width: 491px;
+    height: 77px;
+    font-size: 27px;
+    outline: none;
+    border: 0;
+    border-radius: 64px;
+    background-color: #FF2AD5;
+    font-family: "Mulish", sans-serif;
+    padding-left: 41px;
+}
+
+input::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+.pink-input:focus {
+    font-size: 27px;
+    outline: none;
+    background-color: #FF2AD5;
+    color: #ffffff;
+    padding-left: 41px;
+    font-family: "Mulish", sans-serif;
+}
+
+.input-img {
+    width: 125px;
+    height: min-content;
+}
+
+.pink-button {
+    display: flex;
+    font-family: "Mulish", sans-serif;
+    height: 57px;
+    border: solid #FF2AD5 3px;
+    border-radius: 64px;
+    color: #FF2AD5;
+    font-size: 27px;
+    text-decoration: none;
+    background-color: black;
+}
+
+.but1 {
+    width: 295px;
+    padding-left: 98px;
+    padding-top: 9px;
+}
+
+.pink-button:hover {
+    text-decoration: none;
+    background-color: #FF2AD5;
+    border-radius: 64px;
+    color: #ffffff;
+    transition: 0.4s;
+}
+
+/* 5 блок */
+
+.lets-start {
+    margin-bottom: 326px;
+    display: flex;
+    flex-direction: column;
+}
+
+.but2 {
+    width: 362px;
+    margin-left: 540px;
+    padding-bottom: 14px;
+    padding-left: 60px;
+    margin-top: 30px;
+}
+
+
+/* 6 блок */
+
+footer {
+    width: 903px;
+    margin-left: 128px;
+    margin-bottom: 146px;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: column;
+}
+
+h4 {
+    margin-bottom: 110px;
+}
+
+tel {
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.a-footer {
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.a-footer:hover {
+    text-decoration: none;
+    color: #FF2AD5;
+    transition: 0.4s;
 }
