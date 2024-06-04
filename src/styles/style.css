@@ -3,13 +3,17 @@
     margin: 0; padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: black;
     font-size: 30px;
     margin: 0;
     font-family: "Mulish", sans-serif;
     color: white;
-    width: 1440px;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -237,7 +241,6 @@ input::-webkit-input-placeholder {
 .but1 {
     width: 295px;
     padding-left: 98px;
-    padding-top: 9px;
 }
 
 .pink-button:hover {
@@ -286,7 +289,9 @@ h4 {
     margin-bottom: 110px;
 }
 
-tel {
+.tel, .tel:after {
+    color: #ffffff;
+    text-decoration: none;
     font-style: normal;
     margin-bottom: 20px;
 }
