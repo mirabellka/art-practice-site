@@ -45,11 +45,11 @@ p {
 /* верхний блок */
 
 header {
-    width: 1386px;
+    max-width: 1386px;
     height: max-content;
     top: 0;
-    left: 0;
-    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
@@ -79,6 +79,7 @@ nav {
     text-decoration: none;
     color: white;
     margin: 25px;
+    transition: 0.4s;
 }
 
 .menu1 {
@@ -90,6 +91,7 @@ nav {
     background-color:  #FF2AD5;
     color: rgb(255, 255, 255);
     text-decoration: none;
+    transition: 0.4s;
 }
 
 .menu:hover {
@@ -142,8 +144,10 @@ h3 {
 /* 3 блок */
 
 .pictures-block {
-    width: 1352px;
+    max-width: 1352px;
     margin-bottom: 154px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
 }
@@ -159,9 +163,15 @@ h3 {
     margin-top: 74px;
 }
 
-.pics {
+.pic {
     width: 413px;
     height: 355px;
+    transition: 0.4s;
+}
+
+.pic:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
 }
 
 /* 4 блок */
@@ -236,11 +246,14 @@ input::-webkit-input-placeholder {
     font-size: 27px;
     text-decoration: none;
     background-color: black;
+    transition: 0.4s;
 }
 
 .but1 {
     width: 295px;
     padding-left: 98px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .pink-button:hover {
@@ -261,7 +274,8 @@ input::-webkit-input-placeholder {
 
 .but2 {
     width: 362px;
-    margin-left: 540px;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 14px;
     padding-left: 60px;
     margin-top: 30px;
@@ -300,6 +314,7 @@ h4 {
     text-decoration: none;
     color: #ffffff;
     margin-bottom: 20px;
+    transition: 0.4s;
 }
 
 .a-footer:hover {
